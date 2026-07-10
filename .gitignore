@@ -1,0 +1,28 @@
+# Media / working files
+*.mp4
+!assets/demo-trailer.mp4
+*.mov
+*.m4a
+*.wav
+*.png
+*.jpg
+proxy.mp4
+list.txt
+ffmpeg2pass-*.log*
+
+# Env / secrets
+.env
+*.key
+SONILO_API_KEY*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python (if example scripts are added)
+__pycache__/
+*.pyc
+.venv/
+venv/
