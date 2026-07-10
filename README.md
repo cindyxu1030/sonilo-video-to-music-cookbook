@@ -42,7 +42,7 @@ matches the finished cut instead of a random library track.
 
 | Surface | Best for | What you get |
 |---|---|---|
-| **MCP server** (`sonilo-mcp`) | Agentic workflows (Claude, Codex, any MCP client) | A `video_to_music` tool — hand it a video, get back a matched audio file |
+| **MCP server** ([`sonilo-mcp`](https://github.com/sonilo-ai/sonilo-mcp)) | Agentic workflows (Claude, Codex, any MCP client) | A `video_to_music` tool — hand it a video, get back a matched audio file |
 | **REST API** | Platforms & backends | Async job + webhook → `preview_url`, `final_audio_url`, and a per-track `license_id` (an auditable license record) |
 
 > Sonilo also offers sound effects (SFX) and section-level control on the [web platform](https://sonilo.com).
