@@ -82,7 +82,8 @@ generated / stitched clips (any model)
 ```
 
 Full walkthrough with copy-paste commands: **[`PIPELINE.md`](./PIPELINE.md)** ·
-Command reference: **[`RECIPES.md`](./RECIPES.md)**
+Command reference: **[`RECIPES.md`](./RECIPES.md)** ·
+Worked example: **[Higgsfield clips → finished trailer](./examples/higgsfield.md)**
 
 ## Integration patterns by tool type
 
