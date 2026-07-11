@@ -65,7 +65,7 @@ video_to_music({
 ```
 
 Or via the REST API (async job + webhook), which returns `preview_url`, `final_audio_url`, and a
-per-track `license_id`. Full API docs at [sonilo.com](https://sonilo.com).
+per-track `license_id`. Full API docs at [sonilo.com](https://sonilo.com/?utm_source=github&utm_medium=oss&utm_campaign=v2m-cookbook).
 
 **Mux the soundtrack onto the full-resolution master**, with a short tail fade, video untouched:
 
@@ -102,4 +102,4 @@ is non-linear, so encode once and measure, then adjust CRF up or down to hit you
   single optional style hint for the whole track. `text_to_music(prompt, duration)` generates a
   fixed-length bed with no video to match (a developer affordance).
 - **REST:** async job + webhook → `preview_url`, `final_audio_url`, `license_id`.
-- Get an API key and full docs at [sonilo.com](https://sonilo.com).
+- Get an API key and full docs at [sonilo.com](https://sonilo.com/?utm_source=github&utm_medium=oss&utm_campaign=v2m-cookbook).

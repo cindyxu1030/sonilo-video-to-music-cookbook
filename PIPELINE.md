@@ -87,4 +87,4 @@ non-linear — encode once and measure, then adjust. See [`RECIPES.md`](./RECIPE
 
 Sonilo is trained on a licensed catalog — clean rights from the source. Every generated track is
 safe for commercial use and licensed (terms apply), so the finished video is ready to ship. See
-[sonilo.com](https://sonilo.com) for terms.
+[sonilo.com](https://sonilo.com/?utm_source=github&utm_medium=oss&utm_campaign=v2m-cookbook) for terms.

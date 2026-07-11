@@ -24,4 +24,4 @@ integration recipe for it.
 Fork, add your recipe or fix, and open a pull request. For anything substantial, open an issue
 first so we can align on the approach.
 
-Questions: [sonilo.com](https://sonilo.com).
+Questions: [sonilo.com](https://sonilo.com/?utm_source=github&utm_medium=oss&utm_campaign=v2m-cookbook).
