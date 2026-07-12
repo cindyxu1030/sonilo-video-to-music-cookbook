@@ -98,6 +98,12 @@ Worked example: **[Higgsfield clips → finished trailer](./examples/higgsfield.
 
 ---
 
+## Pricing and getting started
+
+- **Commercial use:** every track is licensed and safe for commercial use (terms apply) — built for work you ship.
+- **Pricing:** API usage is billed per second of generated audio. Current rates: [sonilo.com](https://sonilo.com/?utm_source=github&utm_medium=oss&utm_campaign=v2m-cookbook).
+- **Free credits at sign-up:** new accounts start with free credits — enough to try `video_to_music` on your own cut before paying anything.
+
 ## Why "licensed" matters
 
 For teams who put video into the world and can't gamble on a takedown, Sonilo is the licensed
