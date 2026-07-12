@@ -1,6 +1,6 @@
 # Media / working files
 *.mp4
-!assets/demo-trailer.mp4
+!assets/*.mp4
 *.mov
 *.m4a
 *.wav

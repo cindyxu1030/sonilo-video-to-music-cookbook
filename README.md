@@ -16,6 +16,7 @@ This cookbook shows how to add that music step to **any** AI-video pipeline.
 **▶ [Watch the reference demo](./assets/demo-trailer.mp4)** — a 15-second trailer assembled from
 AI-generated clips (stitched → graded → music by Sonilo). The soundtrack was composed from the
 finished cut: the swell lands on the reveal, the impact lands on the edit.
+**More examples: [DEMOS.md](./DEMOS.md)**
 
 ---
 
