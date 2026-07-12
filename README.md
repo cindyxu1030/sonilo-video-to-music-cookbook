@@ -46,8 +46,8 @@ matches the finished cut instead of a random library track.
 | **MCP server** ([`sonilo-mcp`](https://github.com/sonilo-ai/sonilo-mcp)) | Agentic workflows (Claude, Codex, any MCP client) | A `video_to_music` tool — hand it a video, get back a matched audio file |
 | **REST API** | Platforms & backends | Async job + webhook → `preview_url`, `final_audio_url`, and a per-track `license_id` (an auditable license record) |
 
-> Sonilo also offers sound effects (SFX) and section-level control on the [web platform](https://sonilo.com/?utm_source=github&utm_medium=oss&utm_campaign=v2m-cookbook).
-> This cookbook focuses on the developer surfaces above.
+> Sonilo also generates sound effects from video: `video_to_sfx` / `text_to_sfx` (MCP v0.2.1+ and REST).
+> Section-level control lives on the [web platform](https://sonilo.com/?utm_source=github&utm_medium=oss&utm_campaign=v2m-cookbook). This cookbook focuses on the music step; SFX recipes are coming.
 
 ## 60-second quickstart (MCP)
 
