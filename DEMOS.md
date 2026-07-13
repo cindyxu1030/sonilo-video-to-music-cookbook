@@ -16,6 +16,15 @@ Click any file to play it on GitHub.
 | [Sriracha](./assets/demo-sriracha.mp4) | — | Product/SMB demo |
 | [Cinematic v1](./assets/demo-cinematic-v1.mp4) | 20s | Early pipeline demo |
 
+## Before / after: same cut, new music
+
+| Version | |
+|---|---|
+| [With Sonilo music](./assets/apple-sonilo.mp4) | The cut is untouched — only the music changed |
+| [The viral cut](./assets/apple-original.mp4) | For comparison |
+
+The video: Apple's "Crush!" iPad ad played in reverse — the viral "Hey @Apple, I fixed it for you" edit by filmmaker [Reza Sixo Safai (@rezawrecktion)](https://twitter.com/rezawrecktion/status/1788211832936861950), May 2024. Full credit for the reversal concept and edit to him; original footage © Apple. Shown here only to demonstrate music generated from an existing cut.
+
 ## Video → sound effects
 
 Generated from the on-screen action with `video_to_sfx` — impacts, ambience, transitions.
