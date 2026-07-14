@@ -83,6 +83,37 @@ Deliver two and let the user pick.
 
 ---
 
+## Add sound effects with Sonilo
+
+`video_to_sfx` generates a royalty-free sound-effects track from the video itself: impacts, ambience, and transitions land where the picture needs them. Works alongside the music step or on its own. Examples: [DEMOS.md](./DEMOS.md#video--sound-effects).
+
+Two things that differ from the music call:
+
+- **The video cap is 3 minutes** (music allows 6). Pre-check with `ffprobe` before uploading.
+- **The API is task-based, not streaming**: submit returns a task id, poll until it finishes, then download the audio. The MCP tools (`video_to_sfx`, `get_sfx_task` — sonilo-mcp v0.2.1+) handle this for you.
+
+```
+video_to_sfx({
+  video_path: "path/to/final_cut.mp4",
+  prompt: "footsteps in snow, wind, gear rustle"   // optional hint; omit to derive from the picture
+})
+// → an .m4a sound-effects track matched to the video length
+```
+
+`text_to_sfx(prompt, duration)` covers fixed-length one-shot effects with no video to match.
+
+**Mix effects under the existing audio** (music and/or dialogue), ducked so they support rather than dominate:
+
+```bash
+ffmpeg -y -i final.mp4 -i sfx.m4a \
+  -filter_complex "[1:a]volume=0.5[fx];[0:a][fx]amix=inputs=2:duration=first:normalize=0[a]" \
+  -map 0:v -map "[a]" -c:v copy -c:a aac -b:a 320k final_with_sfx.mp4
+```
+
+If the video is silent (no music step yet), skip the `amix` and map the effects track directly.
+
+---
+
 ## Deliver: compress under a size cap
 
 Single-pass CRF, keep the soundtrack stream as-is:
@@ -101,5 +132,8 @@ is non-linear, so encode once and measure, then adjust CRF up or down to hit you
 - **MCP:** `video_to_music(video_path? | video_url?, prompt?, output_directory?)` — `prompt` is a
   single optional style hint for the whole track. `text_to_music(prompt, duration)` generates a
   fixed-length bed with no video to match (a developer affordance).
-- **REST:** async job + webhook → `preview_url`, `final_audio_url`, `license_id`.
+- **MCP (SFX, v0.2.1+):** `video_to_sfx(video_path? | video_url?, prompt?, output_directory?)` +
+  `get_sfx_task(task_id)`; `text_to_sfx(prompt, duration)` for fixed-length effects. 3-minute video cap.
+- **REST:** music = async job + webhook → `preview_url`, `final_audio_url`, `license_id`;
+  SFX = task pipeline (`POST /v1/video-to-sfx` → poll `/v1/tasks/{task_id}`).
 - Get an API key and full docs at [sonilo.com](https://sonilo.com/?utm_source=github&utm_medium=oss&utm_campaign=v2m-cookbook).
