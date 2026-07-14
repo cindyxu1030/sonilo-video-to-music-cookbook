@@ -6,10 +6,11 @@ You generated the clips. You stitched them together. Now they need music that fi
 and the story — and that's the hard part. Stock libraries and prompt-based generators don't
 know where your cuts are, so the music never quite lands on your edit.
 
-**[Sonilo](https://sonilo.com/?utm_source=github&utm_medium=oss&utm_campaign=v2m-cookbook) turns your video into music.** Point it at your finished cut and
+**[Sonilo](https://sonilo.com/?utm_source=github&utm_medium=oss&utm_campaign=v2m-cookbook) turns your video into music — and sound effects.** Point it at your finished cut and
 it composes an original soundtrack matched to the pacing, emotion, and story — in seconds, no
 prompt needed. Every track is **licensed and safe for commercial use**, so creators and brands
-can actually ship it.
+can actually ship it. The same upload can also produce **royalty-free sound effects** timed to
+the on-screen action: one video in, the whole audio layer out.
 
 This cookbook shows how to add that music step to **any** AI-video pipeline.
 
@@ -46,8 +47,16 @@ matches the finished cut instead of a random library track.
 | **MCP server** ([`sonilo-mcp`](https://github.com/sonilo-ai/sonilo-mcp)) | Agentic workflows (Claude, Codex, any MCP client) | A `video_to_music` tool — hand it a video, get back a matched audio file |
 | **REST API** | Platforms & backends | Async job + webhook → `preview_url`, `final_audio_url`, and a per-track `license_id` (an auditable license record) |
 
-> Sonilo also generates sound effects from video: `video_to_sfx` / `text_to_sfx` (MCP v0.2.1+ and REST) —
-> recipe in [`RECIPES.md`](./RECIPES.md#add-sound-effects-with-sonilo), examples in [`DEMOS.md`](./DEMOS.md#video--sound-effects).
+## Sound effects too
+
+`video_to_sfx` (MCP v0.2.1+ and REST) generates a **royalty-free sound-effects track from the same
+video** — impacts, ambience, and transitions timed to the picture. Music and effects from one
+upload is the part nobody else covers.
+
+- Recipe: [`RECIPES.md` → Add sound effects](./RECIPES.md#add-sound-effects-with-sonilo)
+- Hear it: [`DEMOS.md` → Video → sound effects](./DEMOS.md#video--sound-effects)
+- Note the caps: SFX takes videos up to 3 minutes; music up to 6.
+
 > Section-level control lives on the [web platform](https://sonilo.com/?utm_source=github&utm_medium=oss&utm_campaign=v2m-cookbook).
 
 ## 60-second quickstart (MCP)
@@ -79,8 +88,8 @@ all, matching the music to what it sees. Then mux the returned audio onto your m
 generated / stitched clips (any model)
    └─ 1. STITCH ── assemble the clips into one cut
         └─ 2. GRADE ── (optional) a cinematic color pass
-             └─ 3. ADD MUSIC ── Sonilo video-to-music, matched to the cut
-                  └─ 4. MUX ── lay the soundtrack over the master
+             └─ 3. ADD AUDIO ── Sonilo: music matched to the cut + optional sound effects
+                  └─ 4. MUX ── lay the audio over the master
 ```
 
 Full walkthrough with copy-paste commands: **[`PIPELINE.md`](./PIPELINE.md)** ·
