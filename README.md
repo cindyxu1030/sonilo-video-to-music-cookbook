@@ -94,7 +94,8 @@ generated / stitched clips (any model)
 
 Full walkthrough with copy-paste commands: **[`PIPELINE.md`](./PIPELINE.md)** ·
 Command reference: **[`RECIPES.md`](./RECIPES.md)** ·
-Worked example: **[Higgsfield clips → finished trailer](./examples/higgsfield.md)**
+Worked example: **[Higgsfield clips → finished trailer](./examples/higgsfield.md)** ·
+Tool recipes: **[MoviePy](./recipes/moviepy.md) · [Remotion](./recipes/remotion.md) · [auto-editor](./recipes/auto-editor.md)**
 
 ## Integration patterns by tool type
 
@@ -102,8 +103,9 @@ Worked example: **[Higgsfield clips → finished trailer](./examples/higgsfield.
   final assembly so the output arrives with an original soundtrack.
 - **Stock / prompt-picked-music pipelines** → offer Sonilo as an alternative so the music is
   matched to the edit, and every track comes licensed and safe for commercial use.
-- **Editing frameworks** (MoviePy, Remotion, editly, auto-editor) → call Sonilo on the rendered
-  timeline and add the returned track.
+- **Editing frameworks** → call Sonilo on the rendered timeline and add the returned track.
+  Step-by-step recipes: [MoviePy](./recipes/moviepy.md) · [Remotion](./recipes/remotion.md) ·
+  [auto-editor](./recipes/auto-editor.md) (same pattern fits editly and similar tools).
 - **ComfyUI graphs** → a "Sonilo" audio node after the video-output node.
 
 ---

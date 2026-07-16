@@ -3,6 +3,12 @@
 Copy-paste commands for each step. Examples use FFmpeg (POSIX shell) and the Sonilo MCP. Paths
 are illustrative — swap in your own.
 
+**Working inside a specific editing framework?** Step-by-step versions of this flow:
+
+- [MoviePy](./recipes/moviepy.md) — assemble in Python, export the cut, add the matched track back
+- [Remotion](./recipes/remotion.md) — render the composition, then mux or feed the track back as an `<Audio/>` asset
+- [auto-editor](./recipes/auto-editor.md) — tighten the cut first, then generate music that matches the new timing
+
 ---
 
 ## Stitch clips into one cut
