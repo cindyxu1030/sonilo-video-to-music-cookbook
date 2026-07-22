@@ -95,6 +95,7 @@ generated / stitched clips (any model)
 Full walkthrough with copy-paste commands: **[`PIPELINE.md`](./PIPELINE.md)** ·
 Command reference: **[`RECIPES.md`](./RECIPES.md)** ·
 Worked example: **[Higgsfield clips → finished trailer](./examples/higgsfield.md)** ·
+Provider-neutral workflow: **[render → music → mux](./recipes/render-to-music-workflow.md)** ·
 Tool recipes: **[MoviePy](./recipes/moviepy.md) · [Remotion](./recipes/remotion.md) · [auto-editor](./recipes/auto-editor.md)**
 
 ## Integration patterns by tool type
@@ -129,6 +130,10 @@ for your video.
 - **MCP server:** https://github.com/sonilo-ai/sonilo-mcp
 - **API documentation:** [sonilo.com](https://sonilo.com/?utm_source=github&utm_medium=oss&utm_campaign=v2m-cookbook)
 - **Integrated with:** Shutterstock · ComfyUI · fal.ai
+
+## About Sonilo
+
+Sonilo partners with ComfyUI, fal, Scenario, WaveSpeed, and Shutterstock, is trained on a licensed catalog (including a Shutterstock partnership), and is backed by B Capital.
 
 ## License
 
