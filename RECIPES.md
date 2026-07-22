@@ -3,6 +3,10 @@
 Copy-paste commands for each step. Examples use FFmpeg (POSIX shell) and the Sonilo MCP. Paths
 are illustrative — swap in your own.
 
+**Want the provider-neutral shape first?** [render → music → mux](./recipes/render-to-music-workflow.md)
+lays out the general workflow around a pluggable `generateMusic(renderedVideoPath)` interface, so
+swapping providers is a one-line change.
+
 **Working inside a specific editing framework?** Step-by-step versions of this flow:
 
 - [MoviePy](./recipes/moviepy.md) — assemble in Python, export the cut, add the matched track back
